@@ -14,7 +14,3 @@ console.log('\nListar dados do Set:');
 for(let numero of arrayNumeros){
     console.log(numero);
 }
-    
-    
-    
-    
