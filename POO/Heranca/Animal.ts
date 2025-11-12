@@ -1,0 +1,30 @@
+export abstract class Animal {
+
+    protected _nome: string;
+    private _idade: number;
+
+    constructor(nome: string, idade: number){
+        this._nome = nome;
+        this._idade = idade;
+    }
+
+    public get nome() {
+        return this._nome;
+    }
+
+    public set nome(nome: string) {
+        this._nome = nome;
+    }
+
+    public get idade(){
+        return this._idade;
+    }
+
+    public set idade(idade: number) {
+        this._idade = idade;
+    }
+
+    public abstract emitirSom(): void; /* Definimos aqui que esse método é abstrato. Todas as classes derivadas
+    de animal, precisam obrigatoriamente implementar esse método. */
+    
+}
